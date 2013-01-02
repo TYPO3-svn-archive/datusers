@@ -1,0 +1,10 @@
+plugin.tx_datusers_pi1 {
+  # cat=datusers - pages/enable/100;      type=int+;      label= page uid: Id of the fe_users sysfolder
+  fe_users.pid = 
+
+  # cat=datusers - pages/enable/200;      type=int+;      label= profile page uid: Id of the page for editing the user's profile
+  fe_users.profilePid =
+
+  # cat=datusers - powermail/enable/100;  type=int+;      label= powermail uid: Id of the powermail form
+  powermail.uid = 
+}

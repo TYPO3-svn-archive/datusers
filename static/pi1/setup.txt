@@ -1,0 +1,15 @@
+plugin.tx_datusers_pi1 {
+  template {
+      // default file
+    file = EXT:datusers/res/html/default.tmpl
+  }
+  flexform {
+    sDEF {
+        // Path to the image file with the PDF icon
+      imagefile = TEXT
+      imagefile {
+        value = EXT:datusers/res/images/pdf.png
+      }
+    }
+  }
+}

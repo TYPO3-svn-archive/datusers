@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+  <meta type="array">
+    <type>database</type>
+    <description>Language labels for database tables/fields belonging to extension 'datusers'</description>
+  </meta>
+  <data type="array">
+    <languageKey index="default" type="array">
+      <label index="tt_content.list_type_pi1">DAT users for Powermail</label>
+      <label index="tx_datusers_groups">DAT Usergroups</label>
+      <label index="tx_datusers_groups.datgroup">DAT Usergroup</label>
+      <label index="tx_datusers_groups.fe_group">Website Usergroup</label>
+      <label index="tx_datusers_groups.fe_groups">Website Usergroups</label>
+      <label index="tx_datusers_groups.note">Note</label>
+      <label index="wizard.list_type_pi1">DAT Users: Login</label>
+      <label index="wizard.list_type_pi1.desc">Login for DAT users including the link for get the current password.</label>
+      <label index="tt_content.list_type_pi2">DAT Users: Administration</label>
+      <label index="wizard.list_type_pi2">DAT Users: Administration</label>
+      <label index="wizard.list_type_pi2.desc">DAT Users administration form.</label>
+    </languageKey>
+    <languageKey index="de" type="array">
+      <label index="tt_content.list_type_pi1">DAT Users f<![CDATA[&uuml;]]>r Powermail</label>
+      <label index="tx_datusers_groups">DAT Benutzergruppen</label>
+      <label index="tx_datusers_groups.datgroup">DAT Benutzergruppe</label>
+      <label index="tx_datusers_groups.fe_group">Website Benutzergruppe</label>
+      <label index="tx_datusers_groups.fe_groups">Website Benutzergruppen</label>
+      <label index="tx_datusers_groups.note">Bemerkung</label>
+      <label index="wizard.list_type_pi1">DAT-Benutzer: Login</label>
+      <label index="wizard.list_type_pi1.desc">Login-Formular f<![CDATA[&uuml;]]>r DAT-Benutzer mit Link "Passwort vergessen".</label>
+      <label index="tt_content.list_type_pi2">DAT-Benutzer: Verwaltung</label>
+      <label index="wizard.list_type_pi2">DAT-Benutzer: Verwaltung</label>
+      <label index="wizard.list_type_pi2.desc">Formular f<![CDATA[&uuml;]]>r DAT-Benutzer mit den eigenen Daten.</label>
+    </languageKey>
+  </data>
+</T3locallang>

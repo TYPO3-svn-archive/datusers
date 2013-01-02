@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1">
+        <file>
+            <url>sv1/class.tx_feusersoap_sv1.php</url>
+            <line>155</line>
+        </file>
+        <file>
+            <url>lib/class.tx_datusers_extmanager.php</url>
+            <line>81</line>
+        </file>
+        <file>
+            <url>sv1/class.tx_datusers_sv1.php</url>
+            <line>0</line>
+            <line>1971</line>
+        </file>
+        <file>
+            <url>lib/extmanager/class.tx_datusers_extmanager.php</url>
+            <line>0</line>
+        </file>
+        <file>
+            <url>lib/hooks/class.tx_datusers_hooks.php</url>
+            <line>341</line>
+        </file>
+        <file>
+            <url>lib/locallang.xml</url>
+            <line>70</line>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/media/wd_1211/gera/home/dwildt/workspace/datusers/lib/hooks/class.tx_datusers_hooks.php</file>
+        <file>file:/media/wd_1211/gera/home/dwildt/workspace/datusers/ext_localconf.php</file>
+    </open-files>
+</project-private>

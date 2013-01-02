@@ -1,0 +1,124 @@
+plugin.tx_felogin_pi1 {
+
+  templateFile = EXT:datusers/res/html/extensions/felogin/formWiAdditionalMarker/template.html
+
+  extensions {
+    datusers {
+      forms {
+        marker {
+            // Label and input field for the DAT customer number
+          datusers_login_clientno = COA
+          datusers_login_clientno {
+              // Label
+            10 = TEXT
+            10 {
+              value = Client no
+              lang {
+                de = Kundennummer
+                en = Client no
+              }
+              wrap = <label for="datusers_clientno">|:</label>
+            }
+              // Input
+            20 = TEXT
+            20 {
+              value = Client no
+              lang {
+                de = Kundennummer
+                en = Client no
+              }
+              wrap = <input type="text" id="datusers_clientno" name="datusers_clientno" placeholder="|" value="" />
+            }
+            wrap = <div>|</div>
+          }
+            // Label and test field with the DAT customer number
+          datusers_logout_clientno = COA
+          datusers_logout_clientno {
+              // Label
+            10 = TEXT
+            10 {
+              value = Client no
+              lang {
+                de = Kundennummer
+                en = Client no
+              }
+              wrap = <label>|:</label>
+            }
+              // Input
+            20 = TEXT
+            20 {
+              data = TSFE:fe_user|sesData|datusers|datusers_clientno
+            }
+          }
+            // Label and input field with the DAT username
+          datusers_logout_username = COA
+          datusers_logout_username {
+              // Label
+            10 = TEXT
+            10 {
+              value = username
+              lang {
+                de = Benutzername
+                en = username
+              }
+              wrap = <label>|:</label>
+            }
+              // Input
+            20 = TEXT
+            20 {
+              data = TSFE:fe_user|sesData|datusers|username
+            }
+          }
+            // Label and link to the form for changing user's profile
+          datusers_logout_profilelink = COA
+          datusers_logout_profilelink {
+              // Label
+            10 = TEXT
+            10 {
+              value = user profile
+              lang {
+                de = persönliches Profil
+                en = user profile
+              }
+              wrap = <label>|:</label>
+            }
+              // Link
+            20 = TEXT
+            20 {
+              typolink {
+                parameter = 134
+              }
+//value = Daten ändern
+            }
+          }
+            // Status message in case of error like "can't connect to the server"
+          datusers_soaptest_message = TEXT
+          datusers_soaptest_message {
+            if {
+              isTrue {
+                data = TSFE:fe_user|sesData|datusers|datusers_soaptest_message
+              }
+            }
+            data = TSFE:fe_user|sesData|datusers|datusers_soaptest_message
+            wrap = <div style="border:.4em solid orange;margin:1em 0;padding:0 1em;">|</div>
+          }
+            // Status message in case of error like "can't connect to the server"
+          datusers_status_message = TEXT
+          datusers_status_message {
+            if {
+              isTrue {
+                data = TSFE:fe_user|sesData|datusers|datusers_status_message
+              }
+            }
+            data = TSFE:fe_user|sesData|datusers|datusers_status_message
+            wrap = <div style="border:.4em solid red;margin:1em 0;padding:0 1em;">|</div>
+          }
+        }
+      }
+      workflow {
+          // [Boolean] Replace left over markers
+        removeEmptyMarker = 1
+      }
+    }
+  }
+}
